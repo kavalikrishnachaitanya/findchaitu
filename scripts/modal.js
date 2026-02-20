@@ -1,64 +1,29 @@
 $(document).ready(function() {
     // MODAL
     var modalText = {
-      discover: {
-        title: 'ChowNow Discover',
-        tag: 'FOOD ORDERING PLATFORM.',
-        detail:
-          'ChowNow Discover is a platform that lets customers discover new local restaurants and provides business owners with tools to convert first time orders into lifelong diners.',
-        link: 'https://eat.chownow.com/'
+      splitexpense: {
+        title: 'Split Expense',
+        tag: 'FULL-STACK SPENDING PLATFORM',
+        detail: 'A complete Flutter & Firebase mobile application for tracking shared expenses. Features Google OAuth authentication, smart debt simplification algorithms, and real-time expense syncing.',
+        link: 'https://github.com/kavalikrishnachaitanya/SplitExpense'
       },
-      ordering: {
-        title: 'ChowNow Ordering Web',
-        tag: 'WHITE-LABEL ONLINE ORDERING SOLUTION.',
-        detail:
-          'ChowNow is a commission-free online ordering system and food ordering app helping restaurants feed their hungry customers.',
-        link: 'https://direct.chownow.com/direct/195/locations/260'
+      bloodline: {
+        title: 'Bloodline Family Tree Creator',
+        tag: 'HIERARCHICAL VISUALIZATION APP',
+        detail: 'A mobile application built in Flutter for creating, navigating, and visualizing complex family trees. Includes features to automatically compute and identify relationships between any two relatives.',
+        link: '#'
       },
-      newrelic: {
-        title: 'NewRelic.com',
-        tag: 'APPLICATION PERFORMANCE MONITORING.',
-        detail:
-          'Roambi provides analytics, reporting, and business intelligence for companies to use on the go. A Wordpress hosted site written in PHP and Javascript with Hubspot Integration.',
-        link: 'http://www.newrelic.com'
+      agentorch: {
+        title: 'Agentic Orchestration Platform',
+        tag: 'ENTERPRISE AI PIPELINE',
+        detail: 'Designed a distributed Agent-to-Agent (A2A) framework utilizing LangGraph for Accenture. Implements stateful multi-agent workflows and dynamic Tool-use/MCP integration for automated system intelligence.',
+        link: '#'
       },
-      roambi: {
-        title: 'Roambi.com',
-        tag: 'BUSINESS ANALYTICS.',
-        detail:
-          'Roambi provides analytics, reporting, and business intelligence for companies to use on the go. A Wordpress hosted site written in PHP and Javascript with Hubspot Integration.',
-        link: 'http://www.roambi.com'
-      },
-      walker: {
-        title: 'WalkerTracker',
-        tag: 'PERFORMANCE METRICS.',
-        detail:
-          'Walker Tracker offers goal management, fitness tracking, and team competitions to companies for internal use. A Ruby on Rails and Javascript companion site for the Walker Tracker App. Features visual metrics and gamified progression system.'
-      },
-      powur: {
-        title: 'Powur.com',
-        tag: 'CONSUMER POWERED MARKETING.',
-        detail:
-          'Powur is a marketing platform for lead generation, recruitment, and team building. Built with Ruby on Rails and Angular-UI. Makes use of Angular-material for front-end visuals. Features complex user tree heiarchy and commission system.',
-        link: 'http://www.powur.com/with/42'
-      },
-      mystand: {
-        title: 'MyStand',
-        tag: 'CROWD-FUNDED CHARITY.',
-        detail:
-          'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.'
-      },
-      never: {
-        title: 'NeverSurrender',
-        tag: 'ALS AWARENESS.',
-        detail:
-          'NeverSurrender is a platform for the new ALS foundation mobile app in hopes to raise awareness and research funding to fight ALS. Pure JavaScript marketing site to promote the new ALS NeverSurrender app.'
-      },
-      themall: {
-        title: 'The Mall',
-        tag: 'PEER GUIDED SHOPPING.',
-        detail:
-          'The Mall is a place to follow the latest fashion purchases of your friends and favorite celebrities. Built with Node.js and Handlebars. Features the ability to import thousands of top brands products into one shopping site.'
+      hybridrag: {
+        title: 'Hybrid Graph-Vector Retrieval',
+        tag: 'ADVANCED RAG ARCHITECTURE',
+        detail: 'Architected a sophisticated Hybrid RAG system integrating GraphRAG (Neo4j/FalkorDB) with standard Vector RAG capabilities. Powers intelligent reverse engineering and codebase analysis.',
+        link: '#'
       }
     };
   
