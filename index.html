@@ -26,39 +26,11 @@
   <!-- LOCAL -->
   <script src="scripts/pt.min.js"></script>
   <script src="scripts/index.js"></script>
-  <script src="scripts/modal.js"></script>
 </head>
 
 <body>
   <div class="overflow-wrap">
     <!-- HOME -->
-    <div class="modal-wrap flex">
-      <div class="mask"></div>
-      <div class="modal" id="modal">
-        <div class="carousel-wrap">
-          <div class="window">
-            <div id="carousel">
-              <div class="slide"></div>
-              <div class="slide"></div>
-              <div class="slide"></div>
-            </div>
-            <i class="mdi mdi-chevron-left" id="prev"></i>
-            <i class="mdi mdi-chevron-right" id="next"></i>
-          </div>
-        </div>
-        <div class="info-box">
-          <div class="title"></div>
-          <div class="tag"></div>
-          <div class="detail"></div>
-          <a href="#" target="_blank">
-            <div class="button">
-              <i class="mdi mdi-open-in-new"></i>VIEW SITE
-            </div>
-          </a>
-        </div>
-        <i class="close mdi mdi-close"></i>
-      </div>
-    </div>
 
     <section id="home" class="flex height-fix">
       <div id="pt" class="canvas"></div>
@@ -79,6 +51,7 @@
             <div class="page-link" dest="about">about</div>
             <div class="page-link" dest="portfolio">portfolio</div>
             <div class="page-link" dest="experience">experience</div>
+            <div class="page-link" dest="personal">personal</div>
             <div class="page-link" dest="contact">contact</div>
           </div>
           <i class="mdi mdi-menu"></i>
@@ -153,6 +126,8 @@
 
         <div class="skills-wrapper flex row-gt-sm">
           <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+            <img src="img/me.jpeg" alt="Krishna Chaitanya Kavali"
+              style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid #740CDC; margin-bottom: 16px;" />
             <div class="label bold">Who's this guy?</div>
             <div>
               I'm a GenAI & Python Developer currently working as a Senior Analyst at Accenture.
@@ -239,33 +214,9 @@
       </div>
 
       <div id="gallery" class="container flex row wrap waypoint">
-        <div class="mix flutter" data-my-order="1">
-          <div style="position: relative;">
-            <div class="card flex" style="align-items: center; justify-content: center;">
-              <i class="mdi mdi-currency-usd" style="font-size: 60pt; color: white; opacity: 0.8;"></i>
-            </div>
-            <div class="text">
-              <div class="bold">Split Expense</div>
-              <span class="highlight">Flutter / Firebase</span>
-            </div>
-            <div class="button" id="splitexpense">LEARN MORE</div>
-          </div>
-        </div>
 
-        <div class="mix flutter" data-my-order="2">
-          <div style="position: relative;">
-            <div class="card flex" style="align-items: center; justify-content: center;">
-              <i class="mdi mdi-account-group" style="font-size: 60pt; color: white; opacity: 0.8;"></i>
-            </div>
-            <div class="text">
-              <div class="bold">Bloodline Family Tree</div>
-              <span class="highlight">Flutter</span>
-            </div>
-            <div class="button" id="bloodline">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix ai" data-my-order="3">
+        <!-- Professional Projects -->
+        <div class="mix ai" data-my-order="1">
           <div style="position: relative;">
             <div class="card flex" style="align-items: center; justify-content: center;">
               <i class="mdi mdi-robot" style="font-size: 60pt; color: white; opacity: 0.8;"></i>
@@ -274,11 +225,11 @@
               <div class="bold">Agentic Orchestration Platform</div>
               <span class="highlight">Python / LangGraph / MCP</span>
             </div>
-            <div class="button" id="agentorch">LEARN MORE</div>
+            <div class="button page-link" dest="experience">LEARN MORE</div>
           </div>
         </div>
 
-        <div class="mix graph" data-my-order="4">
+        <div class="mix graph" data-my-order="2">
           <div style="position: relative;">
             <div class="card flex" style="align-items: center; justify-content: center;">
               <i class="mdi mdi-database-search" style="font-size: 60pt; color: white; opacity: 0.8;"></i>
@@ -287,10 +238,11 @@
               <div class="bold">Hybrid Graph-Vector Retrieval</div>
               <span class="highlight">Python / LlamaIndex / Neo4j</span>
             </div>
-            <div class="button" id="hybridrag">LEARN MORE</div>
+            <div class="button page-link" dest="experience">LEARN MORE</div>
           </div>
         </div>
-        <div class="mix graph" data-my-order="5">
+
+        <div class="mix graph" data-my-order="3">
           <div style="position: relative;">
             <div class="card flex" style="align-items: center; justify-content: center;">
               <i class="mdi mdi-code-braces" style="font-size: 60pt; color: white; opacity: 0.8;"></i>
@@ -299,11 +251,11 @@
               <div class="bold">AI-Powered Reverse Engineering</div>
               <span class="highlight">RedisGraph / Flask</span>
             </div>
-            <div class="button" id="reverseeng">LEARN MORE</div>
+            <div class="button page-link" dest="experience">LEARN MORE</div>
           </div>
         </div>
 
-        <div class="mix graph" data-my-order="6">
+        <div class="mix graph" data-my-order="4">
           <div style="position: relative;">
             <div class="card flex" style="align-items: center; justify-content: center;">
               <i class="mdi mdi-truck-delivery" style="font-size: 60pt; color: white; opacity: 0.8;"></i>
@@ -312,11 +264,11 @@
               <div class="bold">Graph-Driven Supply Chain</div>
               <span class="highlight">Neo4j / FastAPI</span>
             </div>
-            <div class="button" id="supplychain">LEARN MORE</div>
+            <div class="button page-link" dest="experience">LEARN MORE</div>
           </div>
         </div>
 
-        <div class="mix graph" data-my-order="7">
+        <div class="mix graph" data-my-order="5">
           <div style="position: relative;">
             <div class="card flex" style="align-items: center; justify-content: center;">
               <i class="mdi mdi-shield-account" style="font-size: 60pt; color: white; opacity: 0.8;"></i>
@@ -325,11 +277,25 @@
               <div class="bold">Graph-Based RBAC</div>
               <span class="highlight">Neo4j / FastAPI</span>
             </div>
-            <div class="button" id="rbac">LEARN MORE</div>
+            <div class="button page-link" dest="experience">LEARN MORE</div>
           </div>
         </div>
 
-        <div class="mix flutter" data-my-order="8">
+        <!-- Personal Projects Interleaved -->
+        <div class="mix flutter" data-my-order="6">
+          <div style="position: relative;">
+            <div class="card flex" style="align-items: center; justify-content: center;">
+              <i class="mdi mdi-currency-usd" style="font-size: 60pt; color: white; opacity: 0.8;"></i>
+            </div>
+            <div class="text">
+              <div class="bold">Split Expense</div>
+              <span class="highlight">Flutter / Firebase</span>
+            </div>
+            <div class="button page-link" dest="personal">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix flutter" data-my-order="7">
           <div style="position: relative;">
             <div class="card flex" style="align-items: center; justify-content: center;">
               <i class="mdi mdi-lock" style="font-size: 60pt; color: white; opacity: 0.8;"></i>
@@ -338,9 +304,23 @@
               <div class="bold">Encrypt & Decrypt Data</div>
               <span class="highlight">Flutter / AES-256</span>
             </div>
-            <div class="button" id="encrypt">LEARN MORE</div>
+            <div class="button page-link" dest="personal">LEARN MORE</div>
           </div>
         </div>
+
+        <div class="mix flutter" data-my-order="8">
+          <div style="position: relative;">
+            <div class="card flex" style="align-items: center; justify-content: center;">
+              <i class="mdi mdi-account-group" style="font-size: 60pt; color: white; opacity: 0.8;"></i>
+            </div>
+            <div class="text">
+              <div class="bold">Bloodline Family Tree</div>
+              <span class="highlight">Flutter</span>
+            </div>
+            <div class="button page-link" dest="personal">LEARN MORE</div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -383,6 +363,74 @@
       </div>
     </section>
 
+    <!-- PERSONAL PROJECTS -->
+    <section class="flex" id="personal">
+      <div class="header waypoint" data-animation="slide-in-right">
+        PERSONAL PROJECTS
+      </div>
+      <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+
+      <div class="container flex" style="margin-top: 40px; margin-bottom: 20px;">
+        <div class="flex row wrap" style="width: 100%;">
+
+          <!-- Split Expense Project -->
+          <a href="https://github.com/kavalikrishnachaitanya/split_expense" target="_blank"
+            style="text-decoration: none; display: block; width: 100%;">
+            <div class="experience-card waypoint" data-animation="fade-in" style="margin-bottom: 20px;">
+              <div class="exp-header">
+                <div class="company" style="color: #6DE58B;">Split Expense</div>
+                <div class="duration">Flutter / Firebase</div>
+              </div>
+              <div class="role highlight" style="font-size: 11pt; margin-bottom: 10px;">Cross-Platform Mobile
+                Application</div>
+              <p style="margin: 5px 0 0 0; color: #ccc; line-height: 1.6;">Designed and developed a robust mobile
+                application intended to help users effortlessly split shared expenses and bills. Implemented real-time
+                synchronization pipelines utilizing Firebase to maintain accurate ledgers across multiple devices.</p>
+              <div style="margin-top: 15px; color: #740CDC; font-weight: bold; font-size: 10pt;"><i
+                  class="mdi mdi-github"></i> View Repository</div>
+            </div>
+          </a>
+
+          <!-- Encrypt & Decrypt Data Project -->
+          <a href="https://github.com/kavalikrishnachaitanya/Encryption-and-decryption-App" target="_blank"
+            style="text-decoration: none; display: block; width: 100%;">
+            <div class="experience-card waypoint" data-animation="fade-in" style="margin-bottom: 20px;">
+              <div class="exp-header">
+                <div class="company" style="color: #6DE58B;">Encrypt & Decrypt Data</div>
+                <div class="duration">Flutter / AES-256</div>
+              </div>
+              <div class="role highlight" style="font-size: 11pt; margin-bottom: 10px;">Security Utility Application
+              </div>
+              <p style="margin: 5px 0 0 0; color: #ccc; line-height: 1.6;">Built a highly secure, offline-first Flutter
+                application allowing users to instantly encrypt and decrypt sensitive textual information utilizing the
+                Advanced Encryption Standard (AES-256) cryptographic protocol.</p>
+              <div style="margin-top: 15px; color: #740CDC; font-weight: bold; font-size: 10pt;"><i
+                  class="mdi mdi-github"></i> View Repository</div>
+            </div>
+          </a>
+
+          <!-- Bloodline Family Tree Project -->
+          <a href="https://bline.netlify.app/app/" target="_blank"
+            style="text-decoration: none; display: block; width: 100%;">
+            <div class="experience-card waypoint" data-animation="fade-in" style="margin-bottom: 20px;">
+              <div class="exp-header">
+                <div class="company" style="color: #6DE58B;">Bloodline Family Tree</div>
+                <div class="duration">Flutter / Vue.js</div>
+              </div>
+              <div class="role highlight" style="font-size: 11pt; margin-bottom: 10px;">Genealogical Tracking
+                Application</div>
+              <p style="margin: 5px 0 0 0; color: #ccc; line-height: 1.6;">Engineered a detailed networking application
+                allowing end-users to accurately map, track, and visualize complex hierarchical family and genealogical
+                relationships through an intuitive user interface.</p>
+              <div style="margin-top: 15px; color: #00a1a7; font-weight: bold; font-size: 10pt;"><i
+                  class="mdi mdi-web"></i> Live Application</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact">
       <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
@@ -397,17 +445,19 @@
         <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">
           Have a question or want to work together?
         </div>
-        <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form">
-          <input placeholder="Name" type="text" name="name" required />
-          <input placeholder="Enter email" type="email" name="email" required />
-          <textarea placeholder="Your Message" type="text" name="message"></textarea>
-          <div id="success">
-            <div>
-              Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
+
+        <div class="flex row wrap waypoint" data-animation="pop-in" data-delay=".5s"
+          style="gap: 24px; margin-top: 40px; justify-content: center;">
+
+          <a href="mailto:chaitanya2327@gmail.com" style="text-decoration: none;">
+            <div class="contact-link-card">
+              <i class="mdi mdi-email-outline" style="font-size: 32pt; color: #740CDC;"></i>
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-value">chaitanya2327@gmail.com</div>
             </div>
-          </div>
-          <input class="button" type="submit" id="submit" value="SUBMIT" />
-        </form>
+          </a>
+
+        </div>
       </div>
     </section>
 
@@ -415,7 +465,7 @@
       <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
 
       <div class="icon-wrap flex row">
-        <a href="https://www.linkedin.com/in/krishna-chaitanya-kavali/">
+        <a href="https://www.linkedin.com/in/kavalikrishnachaitanya/">
           <div class="flex icon" id="icon-2">
             <i class="mdi mdi-linkedin"></i>
           </div>
@@ -432,46 +482,6 @@
         </div>
       </div>
     </footer>
-  </div>
-
-  <div id="preload">
-    <img src="img/filler.jpg" />
-    <img src="img/thumb-2.jpg" />
-    <img src="img/thumb-3.jpg" />
-    <img src="img/thumb-4.jpg" />
-    <img src="img/thumb-5.jpg" />
-    <img src="img/thumb-6.jpg" />
-    <img src="img/blog-1.jpg" />
-    <img src="img/blog-2.jpg" />
-    <img src="img/blog-3.jpg" />
-    <img src="img/blog-4.jpg" />
-    <img src="img/slides/discover-0.jpg" />
-    <img src="img/slides/discover-1.jpg" />
-    <img src="img/slides/discover-2.jpg" />
-    <img src="img/slides/ordering-0.jpg" />
-    <img src="img/slides/ordering-1.jpg" />
-    <img src="img/slides/ordering-2.jpg" />
-    <img src="img/slides/newrelic-0.jpg" />
-    <img src="img/slides/newrelic-1.jpg" />
-    <img src="img/slides/newrelic-2.jpg" />
-    <img src="img/slides/mystand-0.jpg" />
-    <img src="img/slides/mystand-1.jpg" />
-    <img src="img/slides/mystand-2.jpg" />
-    <img src="img/slides/never-0.jpg" />
-    <img src="img/slides/never-1.jpg" />
-    <img src="img/slides/never-2.jpg" />
-    <img src="img/slides/powur-0.jpg" />
-    <img src="img/slides/powur-1.jpg" />
-    <img src="img/slides/powur-2.jpg" />
-    <img src="img/slides/roambi-0.jpg" />
-    <img src="img/slides/roambi-1.jpg" />
-    <img src="img/slides/roambi-2.jpg" />
-    <img src="img/slides/themall-0.jpg" />
-    <img src="img/slides/themall-1.jpg" />
-    <img src="img/slides/themall-2.jpg" />
-    <img src="img/slides/walker-0.jpg" />
-    <img src="img/slides/walker-1.jpg" />
-    <img src="img/slides/walker-2.jpg" />
   </div>
 </body>
 

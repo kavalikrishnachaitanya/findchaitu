@@ -912,41 +912,41 @@ section:nth-of-type(4) .exp-details li::before {
   color: #6DE58B;
 }
 
-section:nth-of-type(5) {
+section:nth-of-type(6) {
   background: #252934;
   color: #fff;
   padding-top: 175px;
 }
 
-section:nth-of-type(5) .header {
+section:nth-of-type(6) .header {
   color: #fff;
 }
 
-section:nth-of-type(5) .header-bar {
+section:nth-of-type(6) .header-bar {
   background: #6DE58B;
   margin: 25px 0 40px 0;
   width: 110px;
 }
 
-section:nth-of-type(5) .highlight {
+section:nth-of-type(6) .highlight {
   color: #BB77FF;
   font-weight: 600;
 }
 
-section:nth-of-type(5) svg {
+section:nth-of-type(6) svg {
   left: 0;
   position: absolute;
   top: 0;
 }
 
-section:nth-of-type(5) form {
+section:nth-of-type(6) form {
   margin: 40px auto 0 auto;
   min-width: 95%;
 }
 
-section:nth-of-type(5) input[type=text],
-section:nth-of-type(5) input[type=email],
-section:nth-of-type(5) textarea {
+section:nth-of-type(6) input[type=text],
+section:nth-of-type(6) input[type=email],
+section:nth-of-type(6) textarea {
   background: rgba(255, 255, 255, 0.05);
   /* Glass effect for inputs */
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -962,19 +962,19 @@ section:nth-of-type(5) textarea {
   transition: all 0.3s;
 }
 
-section:nth-of-type(5) input[type=text]:focus,
-section:nth-of-type(5) input[type=email]:focus,
-section:nth-of-type(5) textarea:focus {
+section:nth-of-type(6) input[type=text]:focus,
+section:nth-of-type(6) input[type=email]:focus,
+section:nth-of-type(6) textarea:focus {
   border: 1px solid #740CDC;
   background: rgba(255, 255, 255, 0.08);
 }
 
-section:nth-of-type(5) textarea {
+section:nth-of-type(6) textarea {
   margin-bottom: 10px;
   min-height: 150px;
 }
 
-section:nth-of-type(5) .button {
+section:nth-of-type(6) .button {
   background: transparent;
   border: 2px solid #740CDC;
   color: #fff;
@@ -988,12 +988,12 @@ section:nth-of-type(5) .button {
   transition: all 0.3s;
 }
 
-section:nth-of-type(5) .button:hover {
+section:nth-of-type(6) .button:hover {
   background: #740CDC;
   box-shadow: 0 0 15px rgba(116, 12, 220, 0.5);
 }
 
-section:nth-of-type(5) #success {
+section:nth-of-type(6) #success {
   height: 0;
   overflow: hidden;
   position: relative;
@@ -1001,11 +1001,11 @@ section:nth-of-type(5) #success {
   width: 100%;
 }
 
-section:nth-of-type(5) #success.expand {
+section:nth-of-type(6) #success.expand {
   height: 36px;
 }
 
-section:nth-of-type(5) #success div {
+section:nth-of-type(6) #success div {
   background: #04c986;
   border: 1px solid #157c59;
   color: #157051;
@@ -1014,7 +1014,7 @@ section:nth-of-type(5) #success div {
   padding: 5px 0;
 }
 
-section:nth-of-type(5) #close {
+section:nth-of-type(6) #close {
   cursor: pointer;
   font-size: 12pt;
   font-weight: 600;
@@ -1311,7 +1311,7 @@ footer .footnote .highlight {
     height: 200px;
   }
 
-  section:nth-of-type(5) form {
+  section:nth-of-type(6) form {
     min-width: 500px;
   }
 }
@@ -1466,3 +1466,34 @@ footer .footnote .highlight {
 }
 
 /*# sourceMappingURL=style.css.map */
+section:nth-of-type(5) {
+  background: #201E24;
+}
+
+section:nth-of-type(5) .container {
+  padding: 0;
+}
+
+
+
+section#personal .experience-card {
+  background: rgba(255, 255, 255, 0.05); /* slightly lighter than normal mix cards for contrast */
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 30px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  text-align: left;
+}
+section#personal .experience-card p {
+  color: #D1D1D1 !important;
+  font-size: 11pt;
+  line-height: 1.8;
+}
+section#personal .experience-card:hover {
+  background: rgba(255, 255, 255, 0.08); /* slight brightness on hover */
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}

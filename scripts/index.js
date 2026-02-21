@@ -59,6 +59,9 @@ $(function () {
     if (pos2 > $('#experience').offset().top) {
       highlightLink('experience');
     }
+    if (pos2 > $('#personal').offset().top) {
+      highlightLink('personal');
+    }
     if (
       pos2 > $('#contact').offset().top ||
       pos + $(window).height() === $(document).height()
@@ -186,13 +189,13 @@ $(function () {
     $.ajax({
       url: 'https://formspree.io/chaitanya2327@gmail.com',
       method: 'POST',
-      data: { message: $('form').serialize() },
+      data: $(this).serialize(),
       dataType: 'json'
     }).done(function (response) {
       $('#success').addClass('expand');
-      $('#contact-form')
-        .find('input[type=text], input[type=email], textarea')
-        .val('');
+      $('#contact-form')[0].reset();
+    }).fail(function (error) {
+      alert("Oops! There was a problem submitting your form. Did you activate your Formspree email?");
     });
   });
 
